@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.site-logo {
+    display: inline-block;
+    float: left;
+    padding-top: 6px;
+    background-color: #000000;
+}
+
+.site-logo a:hover {
+    background-color: #000000;
+}
+.sidenav {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #0065fd;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+  
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: white;
+  }
+  
+  
+  
+  @media screen and (max-height: 650px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .topnav a {
+    text-decoration: none;
+    float: left;
+    float: right;
+    display: block;
+    color: rgb(243, 236, 236);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  
+  }
+  
+  .topnav a:hover {
+    border-radius: 25px;
+    background-color: #ddd;
+    color: rgb(0, 110, 255);
+  }
+  
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.site-logo {
+    display: inline-block;
+    float: left;
+}
+
+
+.header-btn {
+    float: right;
+    margin-right: 0;
+}
+
+.nav-switch {
+    display: none;
+}
+
+.border {
+    border-bottom: 1px solid #ff0000;
+}
+
+a {
+    text-decoration: none
+}
+
+b {
+    color: rgb(0, 46, 252);
+}
+
+abbr {
+    text-decoration: none;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    padding-left: 40%;
+}
+
+.centro {
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff;
+    text-align: center;
+    background-image: radial-gradient(rgb(0, 110, 255), blue);
+}
+
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ff0000;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.as {
+    padding: 25px;
+}
+
+.sa {
+    padding: 9px;
+}
+
+.center {
+    padding-left: 20px;
+}
+
+.analiseimgs {
+    padding-left: 55%;
+}
+
+.collapsible {
+    overflow-y: visible;
+    background-image: linear-gradient(to right, #2949ff, #143181);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    overflow-y: visible;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    overflow-y: visible;
+
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+}
+
+.middle {
+    margin-top: 10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Status Barras */
+.bar-5 {
+    width: 75%;
+    height: 18px;
+    background-color: #ff0000;
+}
+
+.bar-4 {
+    width: 0%;
+    height: 18px;
+    background-color: #2196F3;
+}
+
+.bar-3 {
+    width: 40%;
+    height: 18px;
+    background-color: #00ff15;
+}
+
+.bar-2 {
+    width: 50%;
+    height: 18px;
+    background-color: #ff9800;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 18px;
+    background-color: #f436eb;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rating {
+    position: relative;
+    display: flex;
+    padding: 5px 5px;
+    border: 3px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    gap: 4px;
+    background-color: rgb(0, 119, 255);
+   
+}
+
+.rating input
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    appearance: none;
+    -webkit-appearance: none;
+
+}
+
+.rating input::before{
+    content: '\f005';
+    position: absolute;
+    font-family: fontAwesome;
+    font-size:34px;
+color: #111;
+transition: 0.5s;
+}
+
+.rating input:hover~input::before,
+.rating input:hover::before,
+.rating input:checked~input::before,
+.rating input:checked::before
+{
+color: var(--c);
+}
+
+.footer-section {
+    background: #5a5a5a;
+    padding: 18px 0;
+    color: #fff;
+    padding-left: 40%;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Logo/GameFireL.png" type="image/x-icon">
+    <link rel="stylesheet" href="battlefield2042.html">
+    <title>GameFire</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="./img/Logo/GameFireL.png"></a>
+        <ul class="navigation">
+            <li> <a href="Pag2.html">Mais Jogos</a></li>
+            <li> <a href="index.html">Pagina Inicial</a></li>
+            <li> <a href="Login.html">Entar </a> </li>
+            <li> <a href="SIGIN.html">Cadastrar</a></li>
+        </ul>
+
+    </header>
+    <div class="banner">
+        <img src="./img/analise/battlefield2042.jpg" class="bg">
+        <div class="content">
+            <img src="./img/features/battlefield2042.png " class="gametitle">
+            <h4>
+                <span>2021</span>
+                <span><i>1.7</i></span>
+                <span>FPS</span>
+            </h4>
+            <p>Battlefield 2042 é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela DICE e publicado pela
+                Electronic Arts. É o décimo sétimo título da série Battlefield e a sequência de Battlefield V, de 2018.
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Imagens</a>
+                <a href="#"> <i></i>
+                    <div class="centro">
+                        <div class="container">
+                            <div class="rating">
+
+                                <input type="radio" name="clr1" style="--c:#ff9933;">
+                                <input type="radio" name="clr1" style="--c:#ff9933;">
+                                <input type="radio" name="clr1" style="--c:#ff9933;">
+                                <input type="radio" name="clr1" style="--c:#ff9933;">
+                                <input type="radio" name="clr1" style="--c:#ff9933;">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="./img/features/play.png">Ver trailer</a>
+    </div>
+    <div class="trailer">
+        <img src="./img/features/close.png" class="close" onclick="toggleVideo();">
+        <video src="./img/features/cod.mp4" controls="true"></video>
+
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+    <center>
+        <div class="fundo">
+            <button type="button" class="collapsible" style="font-weight: bold;">Status</button>
+            <div class="content">
+                <p style="text-align: center;">Status do jogo (Opinião própria)</p>
+                <hr style="border:6px solid #ff0000">
+
+                <div class="row">
+                    <div class="side">
+                        <p>Jogabilidade</p>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <p>55%</p>
+                    </div>
+                    <div class="side">
+                        <p>História</p>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <p>30%</p>
+                    </div>
+                    <div class="side">
+                        <p>Diversão</p>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <p>40%</p>
+                    </div>
+                    <div class="side">
+                        <p>Gráficos</p>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                            <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <p>70%</p>
+                    </div>
+                </div>
+                <br>
+                <hr style="border:6px solid #ff0000">
+            </div>
+        </div>
+    </center>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+<footer>
+    <center>
+        <p>Luis Costa</p><a href="">
+    </center>
+
+</footer>

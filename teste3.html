@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .game-box {
+        background-color: #f1f1f1;
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+      }
+
+      .game-box img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 600px) {
+        .game-box {
+          width: calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 400px) {
+        .game-box {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Meus Jogos Favoritos</h1>
+    </div>
+
+    <div class="row">
+      <div class="game-box">
+        <img src="jogo1.jpg" alt="Jogo 1">
+      </div>
+      <div class="game-box">
+        <img src="jogo2.jpg" alt="Jogo 2">
+      </div>
+      <div class="game-box">
+        <img src="jogo3.jpg" alt="Jogo 3">
+      </div>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Jogos</title>
+    <style>
+      /* Estilos gerais */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      /* Estilos do cabeçalho */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      /* Estilos da seção de jogos */
+      .games-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .game-card {
+        width: calc(33.33% - 20px);
+        background-color: #fff;
+        box-shadow: 0 2px 3px #ccc;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .game-card h2 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      /* Media queries */
+      @media (max-width: 768px) {
+        .game-card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Site de Jogos</h1>
+    </header>
+    <section class="games-section">
+      <div class="game-card">
+        <h2>Jogo 1</h2>
+        <p>Descrição do jogo 1</p>
+      </div>
+      <div class="game-card">
+        <h2>Jogo 2</h2>
+        <p>Descrição do jogo 2</p>
+      </div>
+      <div class="game-card">
+        <h2>Jogo 3</h2>
+        <p>Descrição do jogo 3</p>
+      </div>
+    </section>
+  </body>
+</html>
